@@ -111,7 +111,10 @@ class PuzzleSearchSpace(SearchSpace):
         return result
 
 
-"""Computes a solution to the block puzzle.
+"""Computes a solution to the block puzzle. Input is a 0 or 1 value
+    for each block in the puzzle. For each given block, a 0 represents a block whose 
+    subsequent block is not a joint block, and 1 represents a block whose subsquent 
+    block is a joint block. 
 
     The solution is a trajectory, i.e. a sequence of directions
     from the set {'N', 'S', 'E', 'W', 'U', 'D'}. This trajectory is
@@ -135,5 +138,7 @@ def solution_c():
 
 if __name__ == '__main__':
     print(puzzle_solution())
+    print(solution_b())
+    print(solution_c())
 
 
